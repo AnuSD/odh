@@ -33,7 +33,7 @@ body {
   @media screen and (max-width: 992px) {
     body {
       font-size: 15px;line-height: 19px; 
-      letter-spacing: normal;  } }
+      letter-spacing: normal; } }
 
 a {
   color: #e6e6e6;
@@ -1017,6 +1017,47 @@ body.offcanvas {
   text-transform: capitalize;
   font-weight: 400;
   text-decoration: underline; }
+
+  @media (max-width: 768px) {
+    #colorlib-aside {
+        display: none; /* Hide the sidebar on smaller screens */
+    }
+
+    .colorlib-nav-toggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    #colorlib-main {
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Ensure text and pre elements wrap correctly */
+    .colorlib-narrow-content {
+        padding: 10px;
+    }
+
+    pre {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .add-shayari, .modal-content {
+        width: 100%; /* Full width on mobile */
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row-bottom-padded-md .col-md-12 {
+        width: 100%;
+        padding: 10px;
+    }
+}
 
 #colorlib-counter {
   position: relative;
